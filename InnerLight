@@ -18,7 +18,7 @@ Shader "Unlit/InnerLight"
         _InnerGlowLerpRate("Inner Glow Lerp Rate", range(0, 1)) = 0.8          //内发光颜色和原颜色的差值
         [Toggle(_ShowInnerGlow)] _ShowInnerGlow ("Show Inner Glow", Int) = 0       //开启外轮廓的Toggle
 
-        // 新增属性
+        // 透明度、灰度
         _AlphaAdjustment("Alpha Adjustment", Range(0, 1)) = 1.0   // 透明度调整
         _Grayscale("Grayscale", Range(0, 1)) = 0.0                // 灰度调整
     }
