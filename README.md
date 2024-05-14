@@ -20,5 +20,5 @@ fixed4 frag (v2f i) : SV_Target
 ![image](https://github.com/superfast-jellyfish/unity2D-/assets/144220860/67225289-bc36-44ac-b6fd-93aa7e42b6de)
 ![image](https://github.com/superfast-jellyfish/unity2D-/assets/144220860/cc7f085f-bbc4-4a32-b307-53ee95e67fd0)
 
-3. 图片的外轮廓和内发光、调节透明度和灰度shader
+3. 图片的外轮廓和内发光、调节透明度和灰度shader: InnerLight.
    缺点是透明度会影响内发光，暂时没有解决。
