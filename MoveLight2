@@ -46,16 +46,16 @@ Shader "Unlit/MoveLight2"  //颜色直接用原图反相
 			float _Angle;
             fixed4 frag (v2f i) : SV_Target
             {
-				float2 tempUV = i.uv;
+				float2 tempUV = i.uv;  //流光UV
 				float2x2 MAT = {cos(_Angle),sin(_Angle),-sin(_Angle),cos(_Angle)};
 				tempUV = mul(MAT, tempUV);
                 fixed4 col = tex2D(_MainTex, i.uv);             
 				fixed4 y = tempUV.x;
-				fixed4 flowCol = y + _Percent;     // (-0.5,0.5)
+				fixed4 flowCol = y + _Percent;     // (-0.5,0.5)  uv延x轴偏移
 				flowCol = abs(flowCol);       // (0.5,0,0.5)
 				flowCol = flowCol * _Power;   //( 1,0.09,1)
 				flowCol = lerp(1, 0, saturate(flowCol));   //反色（0，0.99，0）
-				return  col+fixed4(flowCol.x,0,0,1);
+				return  col+fixed4(flowCol.x,0,0,1);  //像素叠加
             }
             ENDCG
         }
