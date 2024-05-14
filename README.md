@@ -12,4 +12,5 @@ fixed4 frag (v2f i) : SV_Target
 				col = col + flowCol;
         return col;
         }                       
-原文链接：https://blog.csdn.net/weixin_36961960/article/details/1161386881使用白色。
+原文链接：https://blog.csdn.net/weixin_36961960/article/details/116138688
+而1流光颜色使用白色。
