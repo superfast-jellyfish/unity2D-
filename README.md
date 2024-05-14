@@ -16,5 +16,6 @@ fixed4 frag (v2f i) : SV_Target
 而1流光颜色使用白色。
 
 2. UI上的流光效果。使用流光贴图和两个脚本，UIFlowingLight放在raw image上, UIFlowingLightInspector用于更改inspector，放在Project中就行    http://www.devacg.com/?post=1605
+
 ![image](https://github.com/superfast-jellyfish/unity2D-/assets/144220860/67225289-bc36-44ac-b6fd-93aa7e42b6de)
 ![image](https://github.com/superfast-jellyfish/unity2D-/assets/144220860/cc7f085f-bbc4-4a32-b307-53ee95e67fd0)
